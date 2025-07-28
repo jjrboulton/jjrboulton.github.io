@@ -28,6 +28,7 @@
                     <ul class="navbar-nav ms-auto py-4 py-lg-0">
                         <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="projects.html">Projects</a></li>
                         <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="research.html">Research Interests</a></li>
                         <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="contact.html">Contact</a></li>
                     </ul>
@@ -36,33 +37,27 @@
         </nav>
         <!-- Page Header-->
         <header class="masthead" style="background-image: url('assets/img/home-bg.jpg')">
-            <div class="container position-relative px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-md-10 col-lg-8 col-xl-7">
-                        <div class="post-heading">
-                            <h1>A Random Picture of the University of Canterbury</h1>
-                            <h2 class="subheading">One piece of one puzzle.</h2>
-                            <span class="meta">
-                                Posted by
-                                <a href="#!">Joshua Boulton</a>
-                                on September 19, 2024
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
         </header>
-        <!-- Post Content-->
-        <article class="mb-4">
-            <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-md-10 col-lg-8 col-xl-7">
-                        <img src="assets/img/uc.jpg" class="img-fluid" alt="Responsive image">
-                        <p>10/10 recommend. I'll write something more interesting ASAP.</p>
-                    </div>
+        <!-- Main Content-->
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+                    <h3>NCEA Lesson Planner</h3>
+                    <p>
+                        This app streamlines the process of creating lesson plans according to the Victoria University of Wellington guidelines.
+                    </p>
+                    <p>
+                        It currently only contains achievement objective data for Technology. I am still formatting the data for other subjects in the NCEA curriculum.
+                    </p>
+                    <p>
+                        Try it <a href="https://jjrboulton.github.io/ncea-lesson-planner" target="_blank">here</a>.
+                    </p>
+                    <!-- Divider-->
+                    <hr class="my-4" />
                 </div>
             </div>
-        </article>
+        </div>
         <!-- Footer-->
         <footer class="border-top">
             <div class="container px-4 px-lg-5">
@@ -74,7 +69,7 @@
                                     <span class="fa-stack fa-lg">
                                         <i class="fas fa-circle fa-stack-2x"></i>
                                         <i class="fab fa-linkedin-in fa-stack-1x fa-inverse"></i>
-                                    </span>
+                                    </span>                                    
                                 </a>
                             </li>
                             <li class="list-inline-item">
@@ -86,7 +81,7 @@
                                 </a>
                             </li>
                             <li class="list-inline-item">
-                                <a href="https://github.com/jjrboulton" target="_blank">
+                                <a href="https://github.com/joshuaboulton" target="_blank">
                                     <span class="fa-stack fa-lg">
                                         <i class="fas fa-circle fa-stack-2x"></i>
                                         <i class="fab fa-github fa-stack-1x fa-inverse"></i>
@@ -103,5 +98,14 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+        <script>
+            kofiWidgetOverlay.draw('joshuaboulton', {
+                'type': 'floating-chat',
+                'floating-chat.donateButton.text': 'Donate',
+                'floating-chat.donateButton.background-color': '#d9534f',
+                'floating-chat.donateButton.text-color': '#fff'
+            });
+        </script>
     </body>
 </html>
