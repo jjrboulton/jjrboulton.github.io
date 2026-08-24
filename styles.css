@@ -1,29 +1,33 @@
 :root {
-                --aqua-deep: #05182d;
-                --glow-purple: rgba(140, 82, 255, 0.25);
-                --glow-cyan: rgba(0, 210, 255, 0.35);
-                --glow-green: rgba(0, 255, 135, 0.2);
+                /* Frutiger Aero / Deep Aquatic Glow Palette */
+                --aero-sky: #0b2545;
+                --aero-water: #134074;
+                --aero-glow: #00d2ff;
                 
-                /* Bright glossy white lower section from image */
-                --card-bg: linear-gradient(135deg, #ffffff 0%, #eaf3f8 100%);
-                --card-text: #0f2c45;
-                --card-shadow: 0 25px 50px rgba(0,0,0,0.25), inset 0 12px 25px rgba(255,255,255,1), inset 0 -8px 20px rgba(180, 205, 225, 0.6);
+                /* Aero Glass effect */
+                --card-bg: linear-gradient(135deg, rgba(255, 255, 255, 0.12) 0%, rgba(0, 210, 255, 0.05) 100%);
+                --card-text: #ffffff;
+                --card-shadow: 0 20px 40px rgba(0, 0, 0, 0.5), 
+                               inset 0 1px 2px rgba(255, 255, 255, 0.6), 
+                               inset 0 -2px 10px rgba(0, 210, 255, 0.2);
                 
-                --btn-emerald: linear-gradient(135deg, #20bf55 0%, #01baef 100%);
+                /* Glossy button */
+                --btn-glossy: linear-gradient(180deg, #20bf55 0%, #01baef 100%);
             }
 
             body {
-                background-color: var(--aqua-deep);
+                background: #031327;
                 background-image: 
-                    radial-gradient(circle at 15% 20%, var(--glow-cyan) 0%, transparent 50%),
-                    radial-gradient(circle at 85% 30%, var(--glow-purple) 0%, transparent 50%),
-                    radial-gradient(circle at 50% 80%, var(--glow-green) 0%, transparent 60%);
+                    radial-gradient(circle at 20% 10%, rgba(0, 210, 255, 0.25) 0%, transparent 50%),
+                    radial-gradient(circle at 80% 90%, rgba(0, 100, 255, 0.25) 0%, transparent 50%),
+                    radial-gradient(circle at 50% 50%, rgba(5, 25, 45, 0.9) 0%, #020b14 100%);
+                background-attachment: fixed;
                 font-family: 'Segoe UI', system-ui, sans-serif;
                 color: #ffffff;
                 overflow-x: hidden;
             }
 
-            /* Ambient Glass Orbs */
+            /* Realistic Aero Bubbles */
             .bubbles-container {
                 position: fixed;
                 top: 0; left: 0; width: 100%; height: 100%;
@@ -32,17 +36,18 @@
 
             .glass-orb {
                 position: absolute; bottom: -150px; border-radius: 50%;
-                background: radial-gradient(circle at 35% 35%, rgba(0, 255, 255, 0.6), rgba(0, 100, 255, 0.4), transparent);
-                box-shadow: inset 0 0 20px rgba(255,255,255,0.8), 0 10px 20px rgba(0,0,0,0.3);
-                border: 1px solid rgba(255, 255, 255, 0.5);
+                background: radial-gradient(circle at 35% 35%, rgba(0, 255, 255, 0.5), rgba(0, 100, 255, 0.2), transparent);
+                box-shadow: inset 0 0 15px rgba(255,255,255,0.7), 0 8px 20px rgba(0,0,0,0.3);
+                border: 1px solid rgba(255, 255, 255, 0.4);
                 animation: floatUp linear infinite;
             }
 
             .glass-orb::after {
                 content: ''; position: absolute;
                 top: 15%; left: 15%; width: 30%; height: 20%;
-                background: white; border-radius: 50%;
-                transform: rotate(-45deg); filter: blur(1px); opacity: 0.8;
+                background: rgba(255, 255, 255, 0.8);
+                border-radius: 50%;
+                transform: rotate(-45deg); filter: blur(1px);
             }
 
             @keyframes floatUp {
@@ -52,20 +57,20 @@
                 100% { transform: translateY(-110vh) scale(1.1); opacity: 0; }
             }
 
-            /* Navbar */
-            #mainNav { padding: 20px 0; z-index: 1030; }
+            /* Glossy Navbar */
+            #mainNav { padding: 15px 0; z-index: 1030; }
             
             #mainNav .container {
-                background: rgba(255, 255, 255, 0.08);
+                background: rgba(255, 255, 255, 0.1);
                 backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
                 border: 1px solid rgba(255, 255, 255, 0.3);
                 border-radius: 40px; padding: 10px 25px;
-                box-shadow: 0 10px 30px rgba(0,0,0,0.3), inset 0 1px 1px rgba(255,255,255,0.5);
+                box-shadow: 0 10px 30px rgba(0,0,0,0.3), inset 0 1px 2px rgba(255,255,255,0.5);
             }
 
             .navbar-brand {
                 font-weight: 800; font-size: 1.5rem; letter-spacing: 1px;
-                color: #ffffff !important; text-shadow: 0 0 10px rgba(255,255,255,0.5);
+                color: #ffffff !important; text-shadow: 0 0 12px rgba(0, 210, 255, 0.8);
             }
 
             .navbar-nav .nav-link {
@@ -79,7 +84,6 @@
                 box-shadow: inset 0 1px 3px rgba(255,255,255,0.4);
             }
 
-            /* Mobile Navbar Fix */
             @media (max-width: 991px) {
                 #navbarResponsive {
                     background: rgba(10, 25, 45, 0.95);
@@ -109,23 +113,26 @@
             .site-heading .subheading { font-weight: 700; font-size: 1.4rem; color: #aaddff; }
             .intro-text { color: #e0f2fe; font-size: 1.1rem; line-height: 1.8; max-width: 800px; margin: 0 auto; }
 
-            /* White Liquid-Gloss Content Cards */
+            /* Glass Content Cards */
             main { position: relative; z-index: 2; }
             
             .glossy-molded-card {
                 background: var(--card-bg);
-                border-radius: 40px;
-                padding: 45px;
+                backdrop-filter: blur(25px); -webkit-backdrop-filter: blur(25px);
+                border-radius: 35px;
+                padding: 40px;
                 margin-bottom: 40px;
                 color: var(--card-text);
                 box-shadow: var(--card-shadow);
-                border: 2px solid rgba(255,255,255,0.8);
+                border: 1px solid rgba(255, 255, 255, 0.25);
+                border-top: 1.5px solid rgba(255, 255, 255, 0.5);
                 position: relative;
             }
 
             .section-heading {
-                font-weight: 800; color: #0a3356; margin-bottom: 25px;
+                font-weight: 800; color: #ffffff; margin-bottom: 25px;
                 display: flex; align-items: center; gap: 15px;
+                text-shadow: 0 0 10px rgba(0, 210, 255, 0.4);
             }
 
             .section-heading i {
@@ -135,30 +142,29 @@
                 box-shadow: 0 5px 15px rgba(0, 100, 255, 0.4), inset 0 2px 5px rgba(255,255,255,0.6);
             }
 
-            .glossy-molded-card h3 { font-weight: 700; color: #0077b6; margin-top: 25px; }
+            .glossy-molded-card h3 { font-weight: 700; color: #00d2ff; margin-top: 25px; }
             .glossy-molded-card p, .glossy-molded-card li { line-height: 1.7; font-size: 1.05rem; }
 
-            /* Inset Porthole Lists */
+            /* Translucent Lists */
             .glossy-molded-card ul { list-style: none; padding: 0; }
-            .glossy-molded-card li {
-                background: #fdfdfd;
-                border-radius: 20px; padding: 18px 25px; margin-bottom: 12px;
-                box-shadow: inset 0 5px 10px rgba(0,0,0,0.08), 0 2px 5px rgba(255,255,255,1);
-                border: 1px solid #e0e8f0;
+            .glossy-molded-card > ul > li {
+                background: rgba(255, 255, 255, 0.07);
+                border-radius: 18px; padding: 18px 25px; margin-bottom: 12px;
+                box-shadow: inset 0 1px 2px rgba(255,255,255,0.3), 0 4px 10px rgba(0,0,0,0.2);
+                border: 1px solid rgba(255, 255, 255, 0.15);
             }
 
-            /* Deep Cyan Inset for inner unordered lists */
             .glossy-molded-card li ul { margin-top: 15px; }
             .glossy-molded-card li ul li {
-                background: radial-gradient(circle at top left, #052844, #011222);
+                background: rgba(0, 210, 255, 0.1);
                 color: #e0f2fe; border: 1px solid rgba(0, 210, 255, 0.3);
-                box-shadow: inset 0 10px 20px rgba(0,0,0,0.6), 0 2px 4px rgba(255,255,255,0.8);
+                box-shadow: inset 0 1px 2px rgba(255,255,255,0.2);
             }
 
-            /* Emerald Connect Button */
+            /* Hyper Glossy Button */
             .btn-hyper-gloss {
                 display: inline-flex; align-items: center;
-                background: var(--btn-emerald); color: #ffffff;
+                background: var(--btn-glossy); color: #ffffff !important;
                 font-weight: 700; padding: 14px 35px; border-radius: 50px;
                 text-decoration: none; margin-top: 20px;
                 box-shadow: inset 0 2px 4px rgba(255,255,255,0.8), inset 0 -4px 10px rgba(0,0,0,0.2), 0 10px 20px rgba(0, 200, 100, 0.4);
@@ -166,14 +172,14 @@
             }
 
             .btn-hyper-gloss:hover {
-                transform: translateY(-2px); color: #ffffff;
+                transform: translateY(-2px); color: #ffffff !important;
                 box-shadow: inset 0 3px 6px rgba(255,255,255,0.9), inset 0 -4px 10px rgba(0,0,0,0.2), 0 15px 25px rgba(0, 200, 100, 0.5);
             }
 
             /* Form Wrapper Frame */
             .form-wrapper {
-                background: #f0f6fa; border-radius: 25px; overflow: hidden; margin-top: 20px;
-                box-shadow: inset 0 10px 20px rgba(0,0,0,0.1); border: 2px solid #ffffff;
+                background: rgba(255, 255, 255, 0.05); border-radius: 20px; overflow: hidden; margin-top: 20px;
+                box-shadow: inset 0 5px 15px rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.2);
             }
 
             /* Footer */
