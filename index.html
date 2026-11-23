@@ -13,202 +13,331 @@
          
         <link rel="stylesheet" type="text/css" href="styles.css" />
     </head> 
-    <body> 
-        <!-- Ambient Glass Orbs & Dewdrops --> 
-        <div class="bubbles-container"> 
-            <div class="glass-orb" style="left: 10%; width: 120px; height: 120px; animation-duration: 16s; animation-delay: 0s;"></div> 
-            <div class="glass-orb" style="left: 25%; width: 45px; height: 45px; animation-duration: 12s; animation-delay: 3s;"></div> 
-            <div class="glass-orb" style="left: 55%; width: 80px; height: 80px; animation-duration: 18s; animation-delay: 1s;"></div> 
-            <div class="glass-orb" style="left: 75%; width: 150px; height: 150px; animation-duration: 22s; animation-delay: 5s;"></div> 
-            <div class="glass-orb" style="left: 85%; width: 60px; height: 60px; animation-duration: 14s; animation-delay: 2s;"></div>
-            <div class="glass-orb" style="left: 40%; width: 30px; height: 30px; animation-duration: 10s; animation-delay: 7s;"></div>
-        </div> 
+    <body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
-        <!-- Navigation--> 
-        <nav class="navbar navbar-expand-lg fixed-top" id="mainNav"> 
-            <div class="container px-4 px-lg-5"> 
-                <a class="navbar-brand" href="index.html">Joshua Boulton</a> 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"> 
-                    Menu <i class="fas fa-bars"></i> 
-                </button> 
-                <div class="collapse navbar-collapse" id="navbarResponsive"> 
-                    <ul class="navbar-nav ms-auto py-4 py-lg-0"> 
-                        <li class="nav-item"><a class="nav-link px-lg-3" href="#projects">Projects</a></li> 
-                        <li class="nav-item"><a class="nav-link px-lg-3" href="#experience">Experience</a></li> 
-                        <li class="nav-item"><a class="nav-link px-lg-3" href="#education">Education</a></li> 
-                        <li class="nav-item"><a class="nav-link px-lg-3" href="#awards">Awards</a></li> 
-                        <li class="nav-item"><a class="nav-link px-lg-3" href="#contact">Contact</a></li> 
-                    </ul> 
-                </div> 
-            </div> 
-        </nav> 
+  <header class="site-header">
+    <nav class="nav-wrap" aria-label="Main navigation">
+      <a class="brand" href="#top">Joshua Boulton</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+        Menu
+      </button>
+      <ul class="nav-links" id="primary-navigation">
+        <li><a href="#research">Research</a></li>
+        <li><a href="#interests">Interests</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-        <!-- Page Header--> 
-        <header class="masthead"> 
-            <div class="container position-relative px-4 px-lg-5"> 
-                <div class="row gx-4 gx-lg-5 justify-content-center"> 
-                    <div class="col-md-10 col-lg-8 col-xl-7"> 
-                        <div class="site-heading"> 
-                            <h1>Joshua Boulton</h1> 
-                            <span class="subheading">Independent Researcher</span> 
-                            <p class="mt-4 intro-text"> 
-                                A New-Zealand-based researcher bridging software engineering, complex systems, and the philosophy of mind. I build simulations to explore models of intelligence, consciousness, and their evolutionary origins. 
-                            </p> 
-                        </div> 
-                    </div> 
-                </div> 
-            </div> 
-        </header> 
+  <div id="top"></div>
 
-        <!-- Main Content--> 
-        <main class="container px-4 px-lg-5"> 
-            <div class="row gx-4 gx-lg-5 justify-content-center"> 
-                <div class="col-md-12 col-lg-10"> 
-                     
-                    <!-- Projects Section --> 
-                    <div id="projects" class="glossy-molded-card"> 
-                        <h2 class="section-heading"><i class="fas fa-leaf"></i> Current Projects & Research</h2> 
-                        <h3>Simulations</h3> 
-                        <p>My simulations are typically implemented in the Julia programming language when heavy computation is involved, and otherwise in the Racket programming language. Key areas of exploration include:</p> 
-                        <ul> 
-                            <li>Custom neural network models</li> 
-                            <li>Custom symbolic cognitive architectures</li> 
-                            <li>World modeling, predictive processing, mental simulation, self-modeling, and social cognition</li> 
-                            <li>The organic emergence of sex, parasitism, symbiosis, retroviral insertion, and more</li> 
-                            <li>The implementation of cognition with L-system grammars, graph cellular automata, fuzzy logic circuits, and other unconventional artificial cognitive systems</li> 
-                        </ul> 
-                        <p>The primary current project simulates a 2D world in which drag is anisotropic, provoking the evolution of swimming.</p>
-                        <p>Each cell has a set of sensors (used to detect various kinds of events) and actuators (used to respond to these events). It also has a genome that encodes a fuzzy logic circuit. This circuit determines how the cell responds to sensed events.</p>
-                        <p>The genomic language is designed to replicate various properties of DNA and RNA.</p>
-                        <p>The fuzzy logic gates use Zadeh logic instead of Classical logic.</p>
-                        <p>Multicellularity emerges organically. Various forms of genetic exchange can emerge organically, from viral insertions to sex.</p>
-                        <p>The behaviour of multicellular organisms emerges from the interactions between the unique behaviours of each cell. These cells must work together very non-randomly to produce an organism that can move around with deliberation, as the cells of the organism will have to account for one another's movements and other signals to determine their own movements.</p>
-                        <p>One hope is that, if an organism emerges that is capable of sophisticated navigation in the simulation, the logic circuits driving the behaviour of individual cells will ultimately be human-interpretable, offering insight into how organisms can effectively and efficiently model the world and themselves.</p>
-                        <p>Various other features are included in the hopes that novel neural models, language, and other fascinating phenomena might emerge.</p>
-                         
-                        <h3>Academic Research</h3> 
-                        <p>Currently co-authoring a paper with Dr. Douglas Campbell at the University of Canterbury, arguing for a physicalist theory of phenomenal consciousness that blends:</p> 
-                        <ul> 
-                            <li>a quotational account of phenomenal concepts,</li> 
-                            <li>a relational account of qualia,</li> 
-                            <li>a simulation account of social cognition, and</li> 
-                            <li>an essential indexical account of psychophysical identity statements.</li> 
-                        </ul> 
-                         
-                        <p>This theory elegantly handles:</p> 
-                        <ul> 
-                            <li>Kripkean and Chalmersian conceivability arguments,</li> 
-                            <li>the inverted spectrum argument,</li> 
-                            <li>Nagel's bat,</li> 
-                            <li>the explanatory gap,</li> 
-                            <li>the epistemic gap, and</li> 
-                            <li>the hard problem of consciousness.</li> 
-                        </ul> 
-                        <p>I am also working on a simulation in Racket in which an entity implements a cognitive architecture that includes the features described by our theory, as well as some other features that I think offer insight into other famous problems.</p>
+  <section class="hero">
+    <div class="container">
+      <div class="eyebrow">Independent researcher · New Zealand</div>
+      <h1>Computational Research &amp; Philosophy of Mind</h1>
+      <div class="hero-role">Joshua Boulton</div>
+      <p class="hero-copy">
+        I work across computational modelling, cognitive science and philosophy of mind.
+        My interests include artificial life, adaptive systems, theories of cognition and
+        the computational investigation of intelligence. I develop software and simulations
+        to explore how complex behaviour can arise from relatively simple interacting systems.
+      </p>
+      <div class="hero-links">
+        <a class="text-link" href="#research">Explore research ↓</a>
+        <a class="text-link" href="https://github.com/jjrboulton" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+        <a class="text-link" href="https://www.linkedin.com/in/jjrboulton/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+        <a class="text-link" href="https://thecanterburycritique.substack.com" target="_blank" rel="noopener noreferrer">The Canterbury Critique ↗</a>
+      </div>
+      <div class="topic-list" aria-label="Research areas">
+        <span class="topic">Computational modelling</span>
+        <span class="topic">Cognitive science</span>
+        <span class="topic">Artificial life</span>
+        <span class="topic">Philosophy of mind</span>
+        <span class="topic">Software engineering</span>
+      </div>
+    </div>
+  </section>
 
-                        <h3>Writing</h3> 
-                        <p>I publish my longer-form essays, philosophical inquiries, and thoughts on technology over on my blog, <strong>The Canterbury Critique</strong>.</p> 
-                        <a href="https://thecanterburycritique.substack.com" class="btn-hyper-gloss" target="_blank">Read The Canterbury Critique <i class="fas fa-arrow-right ms-2"></i></a> 
-                    </div> 
+  <main id="main-content" class="container">
+    <section class="section" id="research">
+      <div class="section-heading">
+        <span class="section-kicker">01 / Work</span>
+        <h2>Research &amp; Projects</h2>
+      </div>
+      <p class="section-intro">
+        My work combines theoretical questions with computational implementation.
+        The projects below differ in status: Anum is an independent simulation in development,
+        while the consciousness project is philosophical research developed in an academic context.
+      </p>
 
-                    <!-- Experience Section --> 
-                    <div id="experience" class="glossy-molded-card"> 
-                        <h2 class="section-heading"><i class="fas fa-globe"></i> Professional Experience</h2> 
-                        <ul> 
-                            <li><strong>Soul Machines | Intern</strong>: Invented a novel approach to predicting user intents while users are actively speaking to chatbots.</li> 
-                            <li><strong>University of Canterbury | Research Assistant & Essay Marker</strong>: Provided research support within the philosophy department and evaluated second- and third-year undergraduate essays. I blended my technical skills with my humanities skills, automating a large literary research task with Python scripts.</li> 
-                            <li><strong>Digital Technologies Student Teacher</strong>: Taught Electronics & Robotics, Digital Technologies, and Structural Technologies to a culturally, linguistically, and psychologically diverse group of secondary school students.</li> 
-                            <li><strong>Freelance Article Writer</strong>: Researched and authored SEO-optimised articles on a vast range of subjects.</li> 
-                        </ul> 
-                    </div> 
+      <article class="project">
+        <div class="project-topline">
+          <span class="meta">Independent computational project</span>
+          <span class="status">In development</span>
+        </div>
+        <h3>Anum: An Artificial Life Simulation</h3>
+        <div class="project-meta">Julia · Artificial life · Evolutionary computation · Computational cognition</div>
 
-                    <!-- Education Section --> 
-                    <div id="education" class="glossy-molded-card"> 
-                        <h2 class="section-heading"><i class="fas fa-seedling"></i> Education</h2> 
-                        <ul> 
-                            <li><strong>Certificate in Information Technology</strong> <em>(Expected Completion Soon)</em></li> 
-                            <li><strong>Bachelor of Arts with First Class Honours in Philosophy</strong>: Primary research focus on the philosophy of mind and consciousness. <i>Coursework:</i> 
-                            <ul> 
-                                <li>The Neurobiology of Higher Cognition</li> 
-                                <li>Mathematical Cognition</li> 
-                                <li>Cognitive Science</li> 
-                                <li>Philosophical Logic and Paradoxes</li> 
-                            </ul></li> 
-                            <li><strong>Bachelor of Science</strong>: Major in Philosophy, Minor in Computer Science.</li> 
-                            <li><strong>Diploma in Software Engineering</strong></li> 
-                        </ul> 
-                    </div> 
+        <p>
+          Anum is an experimental two-dimensional environment for investigating the evolution
+          of adaptive behaviour, multicellular organisation and embodied intelligence. Its
+          central approach is to study how increasingly coordinated behaviour might emerge
+          through evolution in organisms composed of interacting cells.
+        </p>
 
-                    <!-- Awards Section --> 
-                    <div id="awards" class="glossy-molded-card"> 
-                        <h2 class="section-heading"><i class="fas fa-award"></i> Awards & Honors</h2> 
-                        <p><strong>The David Novitz Prize</strong>: The David Novitz prize goes to the current year's most promising MA or BA(Hons) student in Philosophy at the University of Canterbury.</p> 
-                    </div> 
+        <h4>Research questions</h4>
+        <ul>
+          <li>Under what conditions can coordinated multicellular behaviour emerge through evolutionary processes?</li>
+          <li>How do physical constraints shape the evolution of locomotion and adaptive behaviour?</li>
+          <li>Can interpretable computational architectures support increasingly sophisticated sensorimotor behaviour?</li>
+          <li>What kinds of internal organisation might support world-modelling and self-modelling?</li>
+        </ul>
 
-                    <!-- Contact Section --> 
-                    <div id="contact" class="glossy-molded-card"> 
-                        <h2 class="section-heading"><i class="fas fa-paper-plane"></i> Get in Touch</h2> 
-                        <p>If you have an interesting opportunity or just want to discuss ideas, reach out below.</p> 
-                         
-                        <!-- Cropped Form Wrapper --> 
-                        <div class="form-wrapper"> 
-                            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfT7GsYRxzGm3RVHyGXWZXwu8pG70b-uFvte26mpyc7JE4BDQ/viewform?embedded=true" width="100%" height="780" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> 
-                        </div> 
-                    </div> 
+        <h4>Model and implementation</h4>
+        <ul>
+          <li>A two-dimensional physical environment in which anisotropic drag makes directional movement consequential.</li>
+          <li>Cells with sensors and actuators that mediate interactions with their environment.</li>
+          <li>Genetically encoded fuzzy-logic circuits, using Zadeh-style operators, to determine cell responses.</li>
+          <li>Evolutionary processes intended to support the emergence of multicellular organisation and genetic exchange.</li>
+        </ul>
 
-                </div> 
-            </div> 
-        </main> 
+        <p>
+          A longer-term research objective is to investigate whether coordinated navigation
+          and other adaptive capabilities can emerge from local cellular interactions, and
+          whether the resulting control structures can be analysed in human-interpretable terms.
+          This is an objective for investigation, not a result claimed to have been demonstrated.
+        </p>
+        <div class="hero-links">
+          <a class="text-link" href="https://github.com/jjrboulton" target="_blank" rel="noopener noreferrer">Find my code on GitHub ↗</a>
+        </div>
+      </article>
 
-        <!-- Footer--> 
-        <footer> 
-            <div class="container px-4 px-lg-5"> 
-                <div class="row gx-4 gx-lg-5 justify-content-center"> 
-                    <div class="col-md-10 col-lg-8 col-xl-7"> 
-                        <ul class="list-inline text-center mb-4"> 
-                            <li class="list-inline-item"> 
-                                <a href="https://www.linkedin.com/in/jjrboulton/" target="_blank"> 
-                                    <span class="fa-stack fa-lg"> 
-                                        <i class="fas fa-circle fa-stack-2x"></i> 
-                                        <i class="fab fa-linkedin-in fa-stack-1x fa-inverse"></i> 
-                                    </span>                                     
-                                </a> 
-                            </li> 
-                            <li class="list-inline-item"> 
-                                <a href="https://github.com/jjrboulton" target="_blank"> 
-                                    <span class="fa-stack fa-lg"> 
-                                        <i class="fas fa-circle fa-stack-2x"></i> 
-                                        <i class="fab fa-github fa-stack-1x fa-inverse"></i> 
-                                    </span> 
-                                </a> 
-                            </li> 
-                            <li class="list-inline-item"> 
-                                <a href="https://thecanterburycritique.substack.com" target="_blank"> 
-                                    <span class="fa-stack fa-lg"> 
-                                        <i class="fas fa-circle fa-stack-2x"></i> 
-                                        <i class="fas fa-bookmark fa-stack-1x fa-inverse"></i> 
-                                    </span> 
-                                </a> 
-                            </li> 
-                        </ul> 
-                        <div class="small text-center text-muted fst-italic">Copyright &copy; Joshua Boulton 2026</div> 
-                    </div> 
-                </div> 
-            </div> 
-        </footer> 
+      <article class="project">
+        <div class="project-topline">
+          <span class="meta">Collaborative philosophical research</span>
+          <span class="status">Research in development</span>
+        </div>
+        <h3>A Physicalist Account of Phenomenal Consciousness</h3>
+        <div class="project-meta">Philosophy of mind · Metaphysics · Phenomenal concepts</div>
+        <p>
+          Research developed in collaboration with Dr Douglas Ian Campbell at the
+          University of Canterbury, concerning a physicalist account of phenomenal consciousness.
+          The account brings together several theoretical approaches:
+        </p>
+        <ul>
+          <li>A quotational account of phenomenal concepts.</li>
+          <li>A relational account of qualia.</li>
+          <li>A simulation-based account of social cognition.</li>
+          <li>An essential-indexical account of psychophysical identity statements.</li>
+        </ul>
+        <p>
+          The project examines how this combination might address familiar challenges
+          for physicalist theories, including conceivability arguments, the inverted
+          spectrum, Nagel's bat, and the explanatory and epistemic gaps.
+        </p>
+        <p>
+          A related computational project in Racket explores aspects of a cognitive
+          architecture informed by the theory. The philosophical account and its
+          computational exploration should be understood as related but distinct work.
+        </p>
+        <!-- Add a paper, thesis, or abstract link here when a shareable version is available. -->
+      </article>
+    </section>
 
-        <!-- Bootstrap core JS--> 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script> 
-         
-        <!-- Ko-fi Widget --> 
-        <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script> 
-        <script> 
-            kofiWidgetOverlay.draw('joshuaboulton', { 
-                'type': 'floating-chat', 
-                'floating-chat.donateButton.text': 'Donate', 
-                'floating-chat.donateButton.background-color': '#76ff03',
-                'floating-chat.donateButton.text-color': '#0d4000'
-            }); 
-        </script> 
-    </body> 
+    <section class="section" id="interests">
+      <div class="section-heading">
+        <span class="section-kicker">02 / Scope</span>
+        <h2>Research Interests</h2>
+      </div>
+      <p class="section-intro">
+        These are areas I am interested in investigating; they are not all established
+        specialisations or completed research programmes.
+      </p>
+      <div class="two-column">
+        <article class="research-item">
+          <h3>Artificial life &amp; evolutionary systems</h3>
+          <p>Evolutionary dynamics, multicellularity, symbiosis, parasitism, genetic exchange and emergent organisation.</p>
+        </article>
+        <article class="research-item">
+          <h3>Computational cognition</h3>
+          <p>World-modelling, predictive processing, self-modelling, mental simulation and social cognition.</p>
+        </article>
+        <article class="research-item">
+          <h3>Computational architectures</h3>
+          <p>Neural and symbolic systems, fuzzy logic, graph-based computation and alternative models of learning.</p>
+        </article>
+        <article class="research-item">
+          <h3>Philosophy of mind</h3>
+          <p>Phenomenal consciousness, physicalism, phenomenal concepts, qualia and psychophysical identity.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <div class="section-heading">
+        <span class="section-kicker">03 / Background</span>
+        <h2>Research &amp; Professional Experience</h2>
+      </div>
+
+      <article class="entry">
+        <div class="entry-date">2023–2024</div>
+        <div>
+          <h3>Research Assistant &amp; Essay Marker</h3>
+          <div class="organisation">University of Canterbury · Department of Philosophy</div>
+          <p>
+            Provided research assistance and assessed undergraduate philosophy essays.
+            Developed bespoke Python tooling for semantic and concept-level analysis of
+            philosophical texts, automating a substantial literature-research workflow
+            and saving more than 100 hours of work.
+          </p>
+        </div>
+      </article>
+
+      <article class="entry">
+        <div class="entry-date">Nov 2022–Feb 2023</div>
+        <div>
+          <h3>Systems Engineering Intern</h3>
+          <div class="organisation">Soul Machines</div>
+          <p>
+            Developed an approach to predicting conversational intent while a user was
+            still speaking. The approach used programmatically generated intermediate
+            speech-recognition examples to support intent prediction from partial utterances.
+          </p>
+        </div>
+      </article>
+
+      <article class="entry">
+        <div class="entry-date">2025</div>
+        <div>
+          <h3>Digital Technologies Student Teacher</h3>
+          <div class="organisation">Secondary education placement</div>
+          <p>
+            Taught and supported learning in Digital Technologies, Electronics and Robotics,
+            and Structural Technologies in a secondary-school setting.
+          </p>
+        </div>
+      </article>
+
+      <article class="entry">
+        <div class="entry-date">Additional experience</div>
+        <div>
+          <h3>Article Writer</h3>
+          <div class="organisation">Freelance</div>
+          <p>Researched and wrote articles across a range of subjects, including SEO-oriented content.</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="section" id="education">
+      <div class="section-heading">
+        <span class="section-kicker">04 / Qualifications</span>
+        <h2>Education</h2>
+      </div>
+      <div class="education-list">
+        <div class="education-item">
+          <div>
+            <strong>BA(Hons) in Philosophy — First Class Honours</strong>
+            <span>University of Canterbury · Research focus in philosophy of mind and consciousness. Relevant coursework included cognitive science, neurobiology of higher cognition, mathematical cognition, and philosophical logic.</span>
+          </div>
+          <span class="year">2024</span>
+        </div>
+        <div class="education-item">
+          <div>
+            <strong>Bachelor of Science</strong>
+            <span>University of Canterbury · Philosophy major, Computer Science minor.</span>
+          </div>
+          <span class="year">—</span>
+        </div>
+        <div class="education-item">
+          <div>
+            <strong>Diploma in Software Engineering and Design — NZQA Level 6</strong>
+            <span>Vision College Ltd.</span>
+          </div>
+          <span class="year">2018</span>
+        </div>
+        <div class="education-item">
+          <div>
+            <strong>Certificate in Information Technology — NZQA Level 5</strong>
+            <span>Yoobee Colleges.</span>
+          </div>
+          <span class="year">—</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="awards">
+      <div class="section-heading">
+        <span class="section-kicker">05 / Recognition</span>
+        <h2>Awards</h2>
+      </div>
+      <div class="award">
+        <h3>David Novitz Prize</h3>
+        <p>
+          University of Canterbury, 2023. Awarded to the most promising MA or BA(Hons)
+          student in Philosophy for the relevant year.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="writing">
+      <div class="section-heading">
+        <span class="section-kicker">06 / Writing</span>
+        <h2>Essays &amp; Commentary</h2>
+      </div>
+      <p class="section-intro">
+        I publish longer-form essays, philosophical inquiries and writing on technology
+        at <em>The Canterbury Critique</em>.
+      </p>
+      <a class="text-link" href="https://thecanterburycritique.substack.com" target="_blank" rel="noopener noreferrer">Visit The Canterbury Critique ↗</a>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="section-heading">
+        <span class="section-kicker">07 / Contact</span>
+        <h2>Get in Touch</h2>
+      </div>
+      <div class="contact-panel">
+        <p>
+          For research discussions, collaboration, technical opportunities or other
+          professional enquiries, you can contact me at <b>joshuaboulton1999@gmail.com</b>.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div>© <span id="year">2026</span> Joshua Boulton</div>
+      <div class="social-links">
+        <a href="https://github.com/jjrboulton" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/jjrboulton/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://thecanterburycritique.substack.com" target="_blank" rel="noopener noreferrer">Writing</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const menuButton = document.querySelector(".menu-toggle");
+    const navigation = document.querySelector("#primary-navigation");
+
+    menuButton.addEventListener("click", () => {
+      const isOpen = menuButton.getAttribute("aria-expanded") === "true";
+      menuButton.setAttribute("aria-expanded", String(!isOpen));
+      navigation.classList.toggle("is-open", !isOpen);
+    });
+
+    navigation.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        menuButton.setAttribute("aria-expanded", "false");
+        navigation.classList.remove("is-open");
+      });
+    });
+
+    document.querySelector("#year").textContent = new Date().getFullYear();
+  </script>
+</body>
 </html>
+
